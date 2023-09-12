@@ -1,43 +1,45 @@
-let modeTravail = document.getElementById("travail");
-let modePause = document.getElementById("pause");
-let bouton = document.getElementById("start");
+let mode = document.getElementById("mode");
+let button = document.getElementById("start");
 
-let timer= document.getElementById("timer");
+let timer = document.getElementById("timer");
 
-let tempsTravail = 25;
-let tempsPause = 5;
+let workTime = 25;
+let breakTime = 5;
 
-
-let secondes = 0;
+let seconds = 0;
 
 
-function sleep(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
 
-bouton.addEventListener('click',() => {
-    if(bouton.innerHTML === "↻"){
-        bouton.innerHTML ="▶";
+
+
+function chrono() {
+    if (workTime != 0) {
+        if (seconds > 0) {
+            seconds -= 1;
+        }
+        else {
+            seconds = 59;
+            workTime -= 1;
+        }
+        
     }
     else{
-        bouton.textContent = "↻";
-        while(!(tempsTravail ==0 && secondes ==0)){
-            if(secondes >0){
-                secondes-=1;
-            }
-            else{
-                secondes = 59;
-                tempsTravail-=1;
-            }
-            timer.innerHTML= `<p> ${tempsTravail + " : " + secondes} </p>`;
-            console.log(tempsTravail + " : " + secondes);
-            setTimeout(1000);
-
-
-            
+        if(seconds >0){
+            seconds -=1;
         }
+        
     }
-})
+    timer.innerHTML = `<p> ${workTime + " : " + seconds} </p>`;
 
+}
 
+button.addEventListener('click', () => {
+    if (button.innerHTML === "↻") {
+        button.innerHTML = "▶";
+    }
+    else {
+        button.textContent = "↻";
+        setInterval(chrono, 1000);
 
+    }
+});
