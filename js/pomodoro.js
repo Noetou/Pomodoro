@@ -34,11 +34,11 @@ function chrono() {
 }
 
 button.addEventListener('click', () => {
-    if (button.innerHTML === `<i class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></i>`) {
-        button.innerHTML = `<i class="fa-solid fa-play"></i>`;
+    if (button.innerHTML === `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></em>`) {
+        button.innerHTML = `<em class="fa-solid fa-play"></em>`;
     }
     else {
-        button.innerHTML = `<i class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></i>`;
+        button.innerHTML = `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></em>`;
         setInterval(chrono, 1000);
 
     }
