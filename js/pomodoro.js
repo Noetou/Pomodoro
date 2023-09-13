@@ -12,6 +12,7 @@ let seconds = 0;
 
 
 
+
 function chrono() {
     if (workTime != 0) {
         if (seconds > 0) {
@@ -21,24 +22,31 @@ function chrono() {
             seconds = 59;
             workTime -= 1;
         }
-        
+
     }
-    else{
-        if(seconds >0){
-            seconds -=1;
+    else {
+        if (seconds > 0) {
+            seconds -= 1;
         }
-        
+
     }
     timer.innerHTML = ` ${workTime + " : " + seconds} `;
 
 }
 
+
+
+function reset() {
+    location.reload();
+}
+
 button.addEventListener('click', () => {
-    if (button.innerHTML === `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></em>`) {
+    if (button.innerHTML === `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180"></em>`) {
         button.innerHTML = `<em class="fa-solid fa-play"></em>`;
+        reset();
     }
     else {
-        button.innerHTML = `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></em>`;
+        button.innerHTML = `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180"></em>`;
         setInterval(chrono, 1000);
 
     }

@@ -8,6 +8,9 @@
     <title>Pomodoro</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/6841393a55.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -16,12 +19,13 @@
     </header>
 
     <div id="mode">
-        <p>Travail &nbsp;</p>
-        <p>&nbsp;Pause</p>
+        <h2>Travail &nbsp;</h2>
+        <h2>&nbsp;Pause</h2>
+        <div id="circle">
+            <p id="timer"> 25 : 00 </p>
+        </div>
     </div>
-
-    <p id="timer"> 25  : 00 </p>
-    <button id="startButton"><em class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></em></button>
+    <button id="startButton"><em class="fa-solid fa-play"></em></button>
     <!-- SCRIPT -->
     <script src="js/pomodoro.js"></script>
 </body>
