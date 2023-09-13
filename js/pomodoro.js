@@ -39,15 +39,7 @@ function workChrono() {
     }
     secondsPrint = seconds.toString().length < 2 ? '0' + seconds : seconds;
     timer.innerHTML = `${workTime + " : " + secondsPrint}`;
-
 }
-
-
-function timerDisplay (chrono) {
-    let chronoString = chrono.toString()
-    chronoString = chronoString.length < 2 ? '0' + chronoString : chronoString
-    return chronoString
-  }
 
 function breakChrono() {
     if (breakTime != 0) {

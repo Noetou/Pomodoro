@@ -36,6 +36,13 @@ body {
     background-color: rgb(173, 9, 9);
 }
 
+#workMode {
+    width: auto;
+    height: auto;
+}
+
+
+
 #workMode h2 {
     display: inline;
     justify-content: center;
@@ -43,9 +50,14 @@ body {
     background-color: rgb(173, 9, 9);
 }
 
+#workMode :nth-child(2) {
+    color: lightgreen;
+}
+
 #workMode #circle {
     border-color: lightgreen;
 }
+
 
 
 #breakMode h2 {
@@ -54,10 +66,25 @@ body {
     align-items: center;
 }
 
+
+#breakMode :nth-child(3) {
+    color: rgb(173, 9, 9);
+}
+
 #breakMode #circle {
     border-color: rgb(248, 42, 6);
 }
 
-#breakMode #startButton{
+#breakMode #startButton {
     background-color: lightgreen;
+}
+
+
+footer {
+    font-family: 'Merriweather', serif;
+    font-size: 25px;
+    width: auto;
+    height: auto;
+    background-color: black;
+    margin-top: 5%;
 }
