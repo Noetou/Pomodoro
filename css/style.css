@@ -4,19 +4,20 @@ body {
     color:white;
 }
 
-.mode{
-    display: inline-block;
+#mode p{
+    display: inline;
 }
 
 
-.timer p{
+
+#timer {
     width:50%;
     height:50%;
     border-radius: 50%;
     border-color: lightgreen;
     border-width: 2px;
 }
-button{
+#startButton {
     width:100px;
     height: 100px;
     border-radius:50%;

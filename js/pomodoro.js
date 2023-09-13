@@ -1,5 +1,5 @@
 let mode = document.getElementById("mode");
-let button = document.getElementById("start");
+let button = document.getElementById("startButton");
 
 let timer = document.getElementById("timer");
 
@@ -29,16 +29,16 @@ function chrono() {
         }
         
     }
-    timer.innerHTML = `<p> ${workTime + " : " + seconds} </p>`;
+    timer.innerHTML = ` ${workTime + " : " + seconds} `;
 
 }
 
 button.addEventListener('click', () => {
-    if (button.innerHTML === "↻") {
-        button.innerHTML = "▶";
+    if (button.innerHTML === `<i class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></i>`) {
+        button.innerHTML = `<i class="fa-solid fa-play"></i>`;
     }
     else {
-        button.textContent = "↻";
+        button.innerHTML = `<i class="fa-solid fa-arrow-rotate-right fa-rotate-180" style="color: #000000;"></i>`;
         setInterval(chrono, 1000);
 
     }
