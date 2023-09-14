@@ -83,8 +83,10 @@ body {
 footer {
     font-family: 'Merriweather', serif;
     font-size: 25px;
-    width: auto;
-    height: auto;
+    width: 100%;
     background-color: black;
     margin-top: 5%;
+    position:fixed;
+    bottom: 0;
+    left:0;
 }

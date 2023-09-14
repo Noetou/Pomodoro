@@ -5,7 +5,7 @@ let timer = document.getElementById("timer");
 let workTime = 25;
 let breakTime = 5;
 
-let seconds = 0;
+let seconds = 5;
 
 
 let chrono;
@@ -58,7 +58,7 @@ function breakChrono() {
         else {
             workTime = 25;
             mode.id = 'workMode';
-            document.body.style.backgroundColor = "rgb(173, 9, 9)";
+            document.body.style.backgroundColor = "rgb(248, 42, 6)";
             clearInterval(chrono);
             chrono = setInterval(workChrono, 1000);
 
