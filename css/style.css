@@ -9,6 +9,7 @@ body {
 
 }
 
+/* Style for the first load of the page */
 #circle {
     display: flex;
     margin: 50px auto;
@@ -36,55 +37,47 @@ body {
     background-color: rgb(173, 9, 9);
 }
 
-#workMode #timerChoice {
-    cursor: pointer;
-    color: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 20%;
-    border: 3px solid white;
-    background-color: rgb(173, 9, 9);
-    position:fixed;
-    right:5%;
-    top:40%;
-    font-size: 50px;
-}
-
-#workMode #timerChoice {
-    cursor: pointer;
-    color: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 20%;
-    border: 3px solid white;
-    background-color: rgb(173, 9, 9);
-    position:fixed;
-    right:5%;
-    top:40%;
-    font-size: 50px;
-} 
-
-#breakMode #timerChoice {
-    cursor: pointer;
-    color: white;
-    width: 200px;
-    height: 200px;
-    border-radius: 20%;
-    border: 3px solid white;
-    background-color: lightgreen;
-    position:fixed;
-    right:5%;
-    top:40%;
-    font-size: 50px;
-}
 #settingsText {
-    position:fixed;
-    right:3%;
-    top:25%;
+    position: fixed;
+    right: 3%;
+    top: 25%;
     width: 15%;
     font-size: 25px;
     font-weight: bold;
 }
+
+/* The style for the Work Mode */
+
+#workMode #timerChoice {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: rgb(173, 9, 9);
+    position: fixed;
+    right: 5%;
+    top: 40%;
+    font-size: 50px;
+}
+
+#workMode #timerChoice {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: rgb(173, 9, 9);
+    position: fixed;
+    right: 5%;
+    top: 40%;
+    font-size: 50px;
+}
+
+
+
 #workMode {
     width: auto;
     height: auto;
@@ -107,7 +100,7 @@ body {
     border-color: lightgreen;
 }
 
-
+/* The style of the Break Mode */
 
 #breakMode h2 {
     display: inline;
@@ -128,14 +121,28 @@ body {
     background-color: lightgreen;
 }
 
+#breakMode #timerChoice {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: lightgreen;
+    position: fixed;
+    right: 5%;
+    top: 40%;
+    font-size: 50px;
+}
 
+/* style for the footer of the page */
 footer {
     font-family: 'Merriweather', serif;
     font-size: 25px;
     width: 100%;
     background-color: black;
     margin-top: 5%;
-    position:fixed;
+    position: fixed;
     bottom: 0;
-    left:0;
+    left: 0;
 }
