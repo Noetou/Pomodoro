@@ -5,13 +5,25 @@ let timer = document.getElementById("timer");
 let workTime = 25;
 let breakTime = 5;
 
-let seconds = 5;
+let seconds = 0;
 
 
 let chrono;
 
 let secondsPrint;
 
+
+let timerChoice = document.getElementById("timerChoice");
+
+let newWorkTime;
+let newBreakTime;
+
+function printTimer(time) {
+    secondsPrint = seconds.toString().length < 2 ? '0' + seconds : seconds;
+    timer.innerHTML = `${time + " : " + secondsPrint}`;
+}
+
+printTimer(workTime);
 function workChrono() {
     if (workTime != 0) {
         if (seconds > 0) {
@@ -28,7 +40,12 @@ function workChrono() {
             seconds -= 1;
         }
         else {
-            breakMode = 5;
+            if (newBreakTime == undefined) {
+                breakTime = 5;
+            }
+            else {
+                breakTime = newBreakTime;
+            }
             seconds = 0;
             mode.id = 'breakMode';
             document.body.style.backgroundColor = "lightgreen";
@@ -37,8 +54,7 @@ function workChrono() {
         }
 
     }
-    secondsPrint = seconds.toString().length < 2 ? '0' + seconds : seconds;
-    timer.innerHTML = `${workTime + " : " + secondsPrint}`;
+    printTimer(workTime);
 }
 
 function breakChrono() {
@@ -56,7 +72,12 @@ function breakChrono() {
             seconds -= 1;
         }
         else {
-            workTime = 25;
+            if (newWorkTime == undefined) {
+                workTime = 25;
+            }
+            else {
+                workTime = newWorkTime;
+            }
             mode.id = 'workMode';
             document.body.style.backgroundColor = "rgb(248, 42, 6)";
             clearInterval(chrono);
@@ -65,8 +86,7 @@ function breakChrono() {
         }
 
     }
-    secondsPrint = seconds.toString().length < 2 ? '0' + seconds : seconds;
-    timer.innerHTML = ` ${breakTime + " : " + secondsPrint} `;
+    printTimer(breakTime);
 
 }
 
@@ -74,6 +94,23 @@ function breakChrono() {
 
 function reset() {
     location.reload();
+}
+
+function chronoModifier() {
+    newWorkTime = prompt("À combien de minutes souhaitez-vous initialiser votre temps de travail ?");
+    if (!(newWorkTime == null || newWorkTime == "")) {
+        workTime = newWorkTime;
+    }
+    newBreakTime = prompt("À combien de minutes souhaitez-vous initialiser votre temps de pause ?")
+    if (!(newBreakTime == null || newBreakTime == "")) {
+        breakTime = newBreakTime;
+    }
+    if (mode.id = 'workMode') {
+        printTimer(workTime);
+    }
+    else{
+        printTimer(breakTime);
+    }
 }
 
 button.addEventListener('click', () => {
@@ -87,3 +124,10 @@ button.addEventListener('click', () => {
         chrono = setInterval(workChrono, 1000);
     }
 });
+
+
+timerChoice.addEventListener('click', () => {
+    chronoModifier();
+})
+
+

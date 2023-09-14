@@ -36,6 +36,55 @@ body {
     background-color: rgb(173, 9, 9);
 }
 
+#workMode #timerChoice {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: rgb(173, 9, 9);
+    position:fixed;
+    right:5%;
+    top:40%;
+    font-size: 50px;
+}
+
+#workMode #timerChoice {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: rgb(173, 9, 9);
+    position:fixed;
+    right:5%;
+    top:40%;
+    font-size: 50px;
+} 
+
+#breakMode #timerChoice {
+    cursor: pointer;
+    color: white;
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    border: 3px solid white;
+    background-color: lightgreen;
+    position:fixed;
+    right:5%;
+    top:40%;
+    font-size: 50px;
+}
+#settingsText {
+    position:fixed;
+    right:3%;
+    top:25%;
+    width: 15%;
+    font-size: 25px;
+    font-weight: bold;
+}
 #workMode {
     width: auto;
     height: auto;
@@ -68,7 +117,7 @@ body {
 
 
 #breakMode :nth-child(3) {
-    color: rgb(173, 9, 9);
+    color: rgb(248, 42, 6);
 }
 
 #breakMode #circle {
