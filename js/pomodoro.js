@@ -50,7 +50,7 @@ function workChrono() {
             seconds -= 1;
         }
         else {
-            if (newBreakTime == undefined) {
+            if (newBreakTime == undefined || isNaN(newBreakTime)) {
                 breakTime = 5;
             }
             else {
@@ -91,7 +91,7 @@ function breakChrono() {
             seconds -= 1;
         }
         else {
-            if (newWorkTime == undefined) {
+            if (newWorkTime == undefined || isNaN(newWorkTime)) {
                 workTime = 25;
             }
             else {
@@ -124,12 +124,24 @@ function reset() {
 function chronoModifier() {
     newWorkTime = prompt("À combien de minutes souhaitez-vous initialiser votre temps de travail ?");
     if (!(newWorkTime == null || newWorkTime == "")) {
-        workTime = newWorkTime;
+        if (isNaN(newWorkTime)) {
+            alert("Ce n'est pas un nombre");
+        }
+        else {
+            workTime = newWorkTime;
+        }
     }
+
     newBreakTime = prompt("À combien de minutes souhaitez-vous initialiser votre temps de pause ?")
     if (!(newBreakTime == null || newBreakTime == "")) {
-        breakTime = newBreakTime;
+        if (isNaN(newBreakTime)) {
+            alert("Ce n'est pas un nombre");
+        }
+        else {
+            breakTime = newBreakTime;
+        }
     }
+
     if (mode.id = 'workMode') {
         printTimer(workTime);
     }
