@@ -19,6 +19,7 @@ let timerChoice = document.getElementById("timerChoice");
 let newWorkTime;
 let newBreakTime;
 
+// To locally store the values of the variables on the user's browser
 if (localStorage) {
     newWorkTime = localStorage.getItem('newWorkTime');
     newBreakTime = localStorage.getItem('newBreakTime');
@@ -109,7 +110,7 @@ function breakChrono() {
                 workTime = newWorkTime;
             }
             mode.id = 'workMode';
-            document.body.style.backgroundColor = "rgb(248, 42, 6)";
+            document.body.style.backgroundColor = "rgb(173, 9, 9)";
             clearInterval(chrono);
             chrono = setInterval(workChrono, 1000);
 
@@ -128,7 +129,7 @@ function reset() {
 
 
 /*  - Asks the user to change the work and break chronos' values, 
-    and changes it for all the cycles incoming until the page gets reload.
+    and changes it for all the cycles incoming, stocking it locally on the user's  browser.
     
     - Print the new timer by calling the printTimer() function */
 
