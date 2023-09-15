@@ -29,14 +29,14 @@ Cette application respecte les normes de codage W3C et d'accessibilité WCAG 2 A
 
 # **ENG**
 # How to use it ? 
-25 minutes if work cycles separated by 5 minutes breaks !
+25 minutes of work cycles separated by 5 minutes breaks !
 
 **Personalize** your cycles by **changing the duration" of your **work and break times** thanks to the ⚙️ button, **new times** will be stored in your navigator !
 
 To **launch the timer** ? Nothing easier :
 **Click** on the ▶️ button 
 
-You had an unforseen event or couldn't concentrate and you want to reset the timer ? 
+You had an unforeseen event or couldn't concentrate and you want to reset the timer ? 
 **Click** on the ↩️ button 
 
 # Check your progress :
