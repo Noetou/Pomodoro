@@ -92,7 +92,7 @@ body {
     background-color: rgb(173, 9, 9);
 }
 
-#workMode :nth-child(2) {
+#workText {
     color: lightgreen;
 }
 
@@ -142,7 +142,29 @@ footer {
     width: 100%;
     background-color: black;
     margin-top: 5%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    float: bottom;
+
+}
+
+@media only screen and (max-width:850px) {
+    body {
+        font-size: 30px;
+    }
+
+    #settingsText {
+        visibility: hidden;
+        width: auto;
+    }
+
+    #workMode #timerChoice,
+    #breakMode #timerChoice {
+        position: relative;
+        width: 100px;
+        height: 100px;
+    }
+
+    #buttons {
+        display: inline-flex;
+    }
+
 }
