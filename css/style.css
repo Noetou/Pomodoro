@@ -92,7 +92,7 @@ body {
     background-color: rgb(173, 9, 9);
 }
 
-#workText {
+#workMode #workText {
     color: lightgreen;
 }
 
@@ -161,8 +161,9 @@ footer {
         position: relative;
         width: 100px;
         height: 100px;
+        text-align: center;
     }
-
+    
     #buttons {
         display: inline-flex;
     }
