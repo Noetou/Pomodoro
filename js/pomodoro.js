@@ -19,6 +19,17 @@ let timerChoice = document.getElementById("timerChoice");
 let newWorkTime;
 let newBreakTime;
 
+if (localStorage) {
+    newWorkTime = localStorage.getItem('newWorkTime');
+    newBreakTime = localStorage.getItem('newBreakTime');
+    if (newWorkTime != undefined && newWorkTime != null) {
+        workTime = newWorkTime;
+    }
+    if (newBreakTime != undefined || newBreakTime != null) {
+        breakTime = newBreakTime;
+    }
+
+}
 
 // Display the timer as HH/mm 
 function printTimer(time) {
@@ -129,6 +140,7 @@ function chronoModifier() {
         }
         else {
             workTime = newWorkTime;
+            localStorage.setItem('newWorkTime', newWorkTime);
         }
     }
 
@@ -139,6 +151,7 @@ function chronoModifier() {
         }
         else {
             breakTime = newBreakTime;
+            localStorage.setItem('newBreakTime', newBreakTime);
         }
     }
 
