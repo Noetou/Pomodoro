@@ -39,7 +39,7 @@ body {
 
 #settingsText {
     position: fixed;
-    right: 3%;
+    right: 5%;
     top: 25%;
     width: 15%;
     font-size: 25px;
@@ -135,6 +135,14 @@ body {
     font-size: 50px;
 }
 
+/* style of the input in the form */
+
+#form input[type=number]{
+    height:auto;
+    margin-bottom:2%;
+    padding-top:10px;
+}
+
 /* style for the footer of the page */
 footer {
     font-family: 'Merriweather', serif;
@@ -149,14 +157,13 @@ footer {
 
 /* media queries to make the app responsive */
 
-@media only screen and (max-width:850px) {
+@media only screen and (max-width:1050px) {
     body {
         font-size: 30px;
     }
 
     #settingsText {
         visibility: hidden;
-        width: auto;
     }
 
     #workMode #timerChoice,
@@ -169,6 +176,10 @@ footer {
 
     #buttons {
         display: inline-flex;
+    }
+
+    #form  {
+        font-size: 20px;
     }
 
 }

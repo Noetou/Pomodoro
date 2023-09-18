@@ -128,16 +128,21 @@ function reset() {
 }
 
 
-/*  - Asks the user to change the work and break chronos' values, 
-    and changes it for all the cycles incoming, stocking it locally on the user's  browser.
-    
+/*  - Asks the user to change the work and break chronos' values
+    - Checks if the new value is an integer
+    - Changes the value for all the cycles incoming, stocking it locally on the user's  browser if it's an integer
+    - Show an alert if the value isn't an integer
     - Print the new timer by calling the printTimer() function */
 
+    
 function chronoModifier() {
-    newWorkTime = prompt("À combien de minutes souhaitez-vous initialiser votre temps de travail ?");
+    
+    newWorkTime = Number(document.getElementById('workMinutes').value);
+    console.log(newWorkTime);
     if (!(newWorkTime == null || newWorkTime == "")) {
-        if (isNaN(newWorkTime)) {
-            alert("Ce n'est pas un nombre");
+        if (!(Number.isInteger(newWorkTime))) {
+            alert("La valeur du temps de travail n'est pas un nombre");
+            newWorkTime = workTime;
         }
         else {
             workTime = newWorkTime;
@@ -145,14 +150,17 @@ function chronoModifier() {
         }
     }
 
-    newBreakTime = prompt("À combien de minutes souhaitez-vous initialiser votre temps de pause ?")
+    newBreakTime = Number(document.getElementById('breakMinutes').value);
+    console.log(newBreakTime);
     if (!(newBreakTime == null || newBreakTime == "")) {
-        if (isNaN(newBreakTime)) {
-            alert("Ce n'est pas un nombre");
-        }
-        else {
+        if ((Number.isInteger(newBreakTime))) {
             breakTime = newBreakTime;
             localStorage.setItem('newBreakTime', newBreakTime);
+            
+        }
+        else {
+            newBreakTime = breakTime;
+            alert("La valeur du temps de pause n'est pas un nombre");
         }
     }
 
@@ -162,6 +170,7 @@ function chronoModifier() {
     else {
         printTimer(breakTime);
     }
+    
 }
 
 
@@ -180,16 +189,23 @@ button.addEventListener('click', () => {
         reset();
 
     }
+
     else {
         button.innerHTML = `<em class="fa-solid fa-arrow-rotate-right fa-rotate-180"></em>`;
         chrono = setInterval(workChrono, 1000);
     }
 });
 
-
 // When the settings button is clicked, call the chronoModifier() function to modify the chronos' value
 timerChoice.addEventListener('click', () => {
-    chronoModifier();
+    if( document.getElementById('form').style.display == "none"){
+        document.getElementById('form').style.display = "block";
+    }   
+    else{
+        document.getElementById('form').style.display = "none";
+        chronoModifier();
+    }
+    
 })
 
 

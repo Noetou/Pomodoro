@@ -28,6 +28,14 @@
             <p id="timer"> </p>
         </div>
         <p id="settingsText">Modifier le temps de travail et de pause </p>
+        <div id="form" style="display: none;"> 
+            <form method="post"> 
+                <label> Nombre de minutes de travail : </label>
+                <input id="workMinutes" type="number" min="0" pattern="\d*"> 
+                <label><br> Nombre de minutes de pause : </label>
+                <input id="breakMinutes"type="number" min="0" pattern="\d*">
+            </form>
+        </div>
         <div id="buttons">
             <button id="timerChoice"> <em class="fa-solid fa-gear"></em><br></button>
             <button id="startButton"><em class="fa-solid fa-play"></em></button>

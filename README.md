@@ -6,7 +6,7 @@ Tool for the Pomodoro work method
 Des cycles de 25 minutes de travail entrecoupés par 5 minutes de pause ! 
 
 **Personnalisez** vos cycles en **changeant la durée** de vos **temps de travail et de pause** grâce au bouton ⚙️, les **nouveaux temps** seront **conservés** dans votre navigateur !  
-
+**Cliquez** une première fois sur le bouton pour afficher les champs de saisie, puis **cliquez à nouveau une fois les nouveaux temps renseignés** afin de valider la modification ! 
 Pour **lancer le chronomètre** ? Rien de plus simple :
 **Cliquez** sur le bouton ▶️ 
 
@@ -32,6 +32,8 @@ Cette application respecte les normes de codage W3C et d'accessibilité WCAG 2 A
 25 minutes of work cycles separated by 5 minutes breaks !
 
 **Personalize** your cycles by **changing the duration" of your **work and break times** thanks to the ⚙️ button, **new times** will be stored in your navigator !
+
+**Click** a first time on the button to show the input fields, then **click again once the fields are filled**s to validate the modifications ! 
 
 To **launch the timer** ? Nothing easier :
 **Click** on the ▶️ button 
