@@ -1,6 +1,7 @@
 # Pomodoro FR/ENG:
-Outil pour méthode de travail Pomodoro
-Tool for the Pomodoro work method
+Outil pour méthode de travail Pomodoro réalisé dans le cadre d'un projet étudiant d'introduction au JavaScript.
+
+Tool for the Pomodoro work method made for a college project about JavaScript introduction.
 
 # Comment l'utiliser ? 
 Des cycles de 25 minutes de travail entrecoupés par 5 minutes de pause ! 
