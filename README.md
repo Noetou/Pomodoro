@@ -28,22 +28,22 @@ Utilisez l'application sur votre ordinateur pour vos séances de travail à la m
 Cette application respecte les normes de codage W3C et d'accessibilité WCAG 2 AA !
 
 # **ENG**
-# How to use it ? 
+# How to use it? 
 25 minutes of work cycles separated by 5 minutes breaks!
 
-**Personalize** your cycles by **changing the duration" of your **work and break times** thanks to the ⚙️ button, **new times** will be stored in your navigator!
+**Personalize** your cycles by **changing the duration** of your **work and break times** thanks to the ⚙️ button, **new times** will be stored in your navigator!
 
 **Click** a first time on the button to show the input fields, then **click again once the fields are filled** to validate the modifications! 
 
-To **launch the timer** ? Nothing easier:
+To **launch the timer**? Nothing easier:
 **Click** on the ▶️ button 
 
-You had an unforeseen event or couldn't concentrate and you want to reset the timer ? 
+You had an unforeseen event or couldn't concentrate and you want to reset the timer? 
 **Click** on the ↩️ button 
 
 # Check your progress:
 
-You can know in which phase you are thanks to the app's color :
+You can know in which phase you are thanks to the app's color:
 - A **red** background and **green** indications for the __work__ phase,
 - A **green** background and **red** indications for the __break__ phase.
 
