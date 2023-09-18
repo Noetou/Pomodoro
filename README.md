@@ -19,7 +19,7 @@ Vous pouvez savoir dans quelle phase vous vous trouvez grâce à la couleur de l
 - Un fond **rouge** et des indications en **vert** pour la phase de __travail__,
 - Un fond **vert** et des indications en **rouge** pour la phase de __pause__.
 
-# Une application adapatative 📱
+# Une application adaptative 📱
 
 Utilisez l'application sur votre ordinateur pour vos séances de travail à la maison ou au bureau, et sur votre téléphone pour vos autres séances de travail !
 
