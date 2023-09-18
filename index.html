@@ -30,10 +30,10 @@
         <p id="settingsText">Modifier le temps de travail et de pause </p>
         <div id="form" style="display: none;"> 
             <form method="post"> 
-                <label> Nombre de minutes de travail : </label>
-                <input id="workMinutes" type="number" min="0" pattern="\d*"> 
-                <label><br> Nombre de minutes de pause : </label>
-                <input id="breakMinutes"type="number" min="0" pattern="\d*">
+                <label for="workMinutes"> Nombre de minutes de travail : </label>
+                <input name="workMinutes" id="workMinutes" type="number" min="0" > 
+                <label for="breakMinutes"><br> Nombre de minutes de pause : </label>
+                <input name="breakMinutes" id="breakMinutes" type="number" min="0">
             </form>
         </div>
         <div id="buttons">
@@ -45,7 +45,7 @@
     <footer>
         <p> Noé Tourbillon : Méthode POMODORO JavaScript </p>
     </footer>
-    <!--- SCRIPT --->
+    <!--SCRIPT--> 
     <script src="js/pomodoro.js"></script>
 </body>
 
