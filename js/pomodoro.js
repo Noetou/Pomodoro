@@ -134,9 +134,9 @@ function reset() {
     - Show an alert if the value isn't an integer
     - Print the new timer by calling the printTimer() function */
 
-    
+
 function chronoModifier() {
-    
+
     newWorkTime = Number(document.getElementById('workMinutes').value);
     console.log(newWorkTime);
     if (!(newWorkTime == null || newWorkTime == "")) {
@@ -156,7 +156,7 @@ function chronoModifier() {
         if ((Number.isInteger(newBreakTime))) {
             breakTime = newBreakTime;
             localStorage.setItem('newBreakTime', newBreakTime);
-            
+
         }
         else {
             newBreakTime = breakTime;
@@ -170,7 +170,7 @@ function chronoModifier() {
     else {
         printTimer(breakTime);
     }
-    
+
 }
 
 
@@ -198,14 +198,14 @@ button.addEventListener('click', () => {
 
 // When the settings button is clicked, call the chronoModifier() function to modify the chronos' value
 timerChoice.addEventListener('click', () => {
-    if( document.getElementById('form').style.display == "none"){
+    if (document.getElementById('form').style.display == "none") {
         document.getElementById('form').style.display = "block";
-    }   
-    else{
+    }
+    else {
         document.getElementById('form').style.display = "none";
         chronoModifier();
     }
-    
+
 })
 
 

@@ -137,10 +137,10 @@ body {
 
 /* style of the input in the form */
 
-#form input[type=number]{
-    height:auto;
-    margin-bottom:2%;
-    padding-top:10px;
+#form input[type=number] {
+    height: auto;
+    margin-bottom: 2%;
+    padding-top: 10px;
 }
 
 /* style for the footer of the page */
@@ -178,7 +178,7 @@ footer {
         display: inline-flex;
     }
 
-    #form  {
+    #form {
         font-size: 20px;
     }
 
